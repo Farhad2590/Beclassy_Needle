@@ -13,7 +13,7 @@
     <header>
         <nav class="bg-base-100">
             <div class="container mx-auto px-4 py-6 flex flex-col lg:flex-row justify-between relative">
-                <div class="dropdown ml-auto lg:hidden">
+                <div class="dropdown ml-auto lg:hidden flex justify-center"> <!-- Added 'flex justify-center' -->
                     <div tabindex="0" role="button" class="btn btn-ghost">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
@@ -48,12 +48,13 @@
                     <a class="text-2xl lg:text-3xl">NEEDLE</a>
                 </div>
             </div>
+            
         </nav>
     </header>
     <main class="container mx-auto w-full lg:w-[94%] px-4">
         <section class="py-10">
             <div class="text-center">
-                <h1 class="text-center text-3xl lg:text-5xl font-bold">Mask</h1>
+                <h1 class="text-center text-3xl lg:text-5xl font-bold">Scrunchie</h1>
                 <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
                     exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
             </div>
@@ -61,7 +62,7 @@
                 <div class="flex flex-col sm:flex-row lg:flex-row gap-3 mt-5 mb-5">
                     <div class="card w-full lg:w-96 bg-base-100 shadow-xl">
                         <figure>
-                            <img src="./images/mask_cart_01.png" alt="Shoes"
+                            <img src="./images/sch1_cart_01.png" alt="Shoes"
                                 class="rounded-xl w-full lg:w-60  transition duration-300 transform hover:scale-110" />
                         </figure>
                         <div class="card-body">
@@ -203,6 +204,36 @@
             </div>
         </section>
     </main>
+    <footer class="mt-10 footer p-10 lg:flex lg:justify-between bg-neutral text-neutral-content ">
+        <aside>
+            <div class="flex items-center">
+                <img class="w-10 lg:w-16 lg:block" src="./images/BeclassyLogo.jpg" alt="" srcset="">
+                <a class="text-2xl lg:text-4xl">BE CLASSY</a>
+            </div>
+            <nav>
+                <h6 class="footer-title">Social Platform Of BE CLASSY</h6>
+                <div class="grid grid-flow-col gap-4">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-square-whatsapp"></i></a>
+                </div>
+            </nav>
+        </aside>
+        <aside>
+            <div class="flex items-center">
+                <img class="w-10 lg:w-16 lg:block" src="./images/NeedleLogo.jpeg" alt="" srcset="">
+                <a class="text-2xl lg:text-4xl">NEEDLE</a>
+            </div>
+            <nav>
+                <h6 class="footer-title">Social Platform Of Needle</h6>
+                <div class="grid grid-flow-col gap-4">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-square-whatsapp"></i></a>
+                </div>
+            </nav>
+        </aside>
+    </footer>
 
 
 </body>
