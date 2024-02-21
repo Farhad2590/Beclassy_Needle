@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="container mx-auto w-[94%]">
+        <nav class="bg-base-100">
+            <div class="container mx-auto px-4 py-6 flex flex-col lg:flex-row justify-between relative">
+                <div class="dropdown ml-auto lg:hidden">
+                    <div tabindex="0" role="button" class="btn btn-ghost">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 absolute right-0">
+                        <li><a>Scrunchie</a></li>
+                        <li><a>Bows</a></li>
+                        <li><a>Mask</a></li>
+                        <li><a>Faceless Potrait</a></li>
+                    </ul>
+                </div>
+                <div class="flex items-center mb-4 lg:mb-0">
+                    <img class="w-10 lg:w-16 lg:block" src="./images/BeclassyLogo.jpg" alt="" srcset="">
+                    <a class="text-2xl lg:text-4xl">BE CLASSY</a>
+                </div>
+                <div class="navbar-center lg:flex justify-center hidden mb-4 lg:mb-0">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Scrunchie</a></li>
+                        <li><a>Bows</a></li>
+                        <li><a>Mask</a></li>
+                        <li><a>Faceless Potrait</a></li>
+                    </ul>
+                </div>
+                <div class="flex items-center">
+                    <img class="w-10 lg:w-16 lg:block" src="./images/NeedleLogo.jpeg" alt="" srcset="">
+                    <a class="text-2xl lg:text-4xl">NEEDLE</a>
+                </div>
+            </div>
+        </nav>
+        <div >
+            <div class="carousel w-full">
+                <div id="item1" class="carousel-item w-full">
+                    <img src="./images/Banner1.png" class="w-full" />
+                </div>
+                <div id="item2" class="carousel-item w-full">
+                    <img src="./images/Banner2.png" class="w-full" />
+                </div>
+                <div id="item3" class="carousel-item w-full">
+                    <img src="./images/Banner3.png" class="w-full" />
+                </div>
+                <div id="item4" class="carousel-item w-full">
+                    <img src="./images/Banner4.png" class="w-full" />
+                </div>
+            </div>
+            <div class="flex justify-center w-full py-2 gap-2">
+                <a href="#item1" class="btn btn-xs">1</a>
+                <a href="#item2" class="btn btn-xs">2</a>
+                <a href="#item3" class="btn btn-xs">3</a>
+                <a href="#item4" class="btn btn-xs">4</a>
+            </div>
+        </div>
+
+
+    </header>
+
+</body>
+
+</html>
