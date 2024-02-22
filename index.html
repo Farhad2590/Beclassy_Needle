@@ -17,10 +17,10 @@
 </head>
 
 <body>
-    <header class="container mx-auto w-[94%]">
+    <header class="container mx-auto fixed top-0 z-50 ">
         <nav class="bg-base-100">
             <div class="container mx-auto px-4 py-6 flex flex-col lg:flex-row justify-between relative">
-                <div class="dropdown ml-auto mt-auto lg:hidden">
+                <div class="dropdown flex justify-between lg:hidden">
                     <div tabindex="0" role="button" class="btn btn-ghost">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
@@ -36,52 +36,56 @@
                         <li><a href="mask.html">Mask</a></li>
                         <li><a href="potrait.html">Faceless Potrait</a></li>
                     </ul>
+                    <div id="cart" class="flex items-center justify-center"><i class="fa-solid fa-cart-shopping "></i></div>
                 </div>
-                <div class="flex gap-4 items-center mb-4 lg:mb-0">
-                    <img class="w-10 lg:w-12 lg:block" src="./images/BeclassyLogo.jpg" alt="" srcset="">
-                    <a class="text-xl lg:text-2xl font-extrabold">BE CLASSY</a>
-                </div>
-                <div class="navbar-center lg:flex justify-center hidden mb-4 lg:mb-0">
-                    <ul class="menu menu-horizontal px-1">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="scrunchie.html">Scrunchie</a></li>
-                        <li><a href="bows.html">Bows</a></li>
-                        <li><a href="mask.html">Mask</a></li>
-                        <li><a href="potrait.html">Faceless Potrait</a></li>
-                    </ul>
-                </div>
-                <div class="flex gap-4 items-center">
-                    <img class="w-10 lg:w-12 lg:block" src="./images/NeedleLogo.jpeg" alt="" srcset="">
-                    <a class="text-xl lg:text-2xl font-semibold">NEEDLE</a>
+                <div class="flex justify-between items-center w-full">
+                    <div class="flex gap-1 lg:gap-4 items-center">
+                        <img class="w-9 lg:w-12 lg:block" src="./images/BeclassyLogo.jpg" alt="" srcset="">
+                        <a class="text-xl lg:text-2xl font-extrabold">BE CLASSY</a>
+                    </div>
+                    <div class="navbar-center lg:flex justify-center hidden mb-4 lg:mb-0">
+                        <ul class="menu menu-horizontal px-1">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="scrunchie.html">Scrunchie</a></li>
+                            <li><a href="bows.html">Bows</a></li>
+                            <li><a href="mask.html">Mask</a></li>
+                            <li><a href="potrait.html">Faceless Potrait</a></li>
+                            <div id="cart" class="flex items-center justify-center"><i class="fa-solid fa-cart-shopping "></i></div>
+                        </ul>
+                    </div>
+                    <div class="flex gap-1 lg:gap-4 items-center">
+                        <img class="w-9 lg:w-12 lg:block" src="./images/NeedleLogo.jpeg" alt="" srcset="">
+                        <a class="text-xl lg:text-2xl font-semibold">NEEDLE</a>
+                    </div>
                 </div>
             </div>
         </nav>
-        <div>
-            <div class="carousel w-full">
-                <div id="item1" class="carousel-item w-full">
-                    <img src="./images/Banner1.png" class="w-full" />
-                </div>
-                <div id="item2" class="carousel-item w-full">
-                    <img src="./images/Banner2.png" class="w-full" />
-                </div>
-                <div id="item3" class="carousel-item w-full">
-                    <img src="./images/Banner3.png" class="w-full" />
-                </div>
-                <div id="item4" class="carousel-item w-full">
-                    <img src="./images/Banner4.png" class="w-full" />
-                </div>
-            </div>
-            <div class="flex justify-center w-full py-2 gap-2">
-                <a href="#item1" class="btn btn-xs">1</a>
-                <a href="#item2" class="btn btn-xs">2</a>
-                <a href="#item3" class="btn btn-xs">3</a>
-                <a href="#item4" class="btn btn-xs">4</a>
-            </div>
-        </div>
-
-
     </header>
-    <main class="container mx-auto w-[94%]">
+    <main class="container mx-auto w-[94%]  mt-36 lg:mt-28">
+        <section>
+            <div>
+                <div class="carousel w-full">
+                    <div id="item1" class="carousel-item w-full">
+                        <img src="./images/Banner1.png" class="w-full" />
+                    </div>
+                    <div id="item2" class="carousel-item w-full">
+                        <img src="./images/Banner2.png" class="w-full" />
+                    </div>
+                    <div id="item3" class="carousel-item w-full">
+                        <img src="./images/Banner3.png" class="w-full" />
+                    </div>
+                    <div id="item4" class="carousel-item w-full">
+                        <img src="./images/Banner4.png" class="w-full" />
+                    </div>
+                </div>
+                <div class="flex justify-center w-full py-2 gap-2">
+                    <a href="#item1" class="btn btn-xs">1</a>
+                    <a href="#item2" class="btn btn-xs">2</a>
+                    <a href="#item3" class="btn btn-xs">3</a>
+                    <a href="#item4" class="btn btn-xs">4</a>
+                </div>
+            </div>
+        </section>
         <section class="mt-10">
             <div class="hero min-h-screen bg-base-200 rounded-lg">
                 <div class="hero-content flex-col lg:flex-row">

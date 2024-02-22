@@ -7,13 +7,20 @@
     <title>Beclassy-Needle-Bows</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/eae2dd41b9.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
+    <header class="container mx-auto fixed top-0 z-50 ">
         <nav class="bg-base-100">
             <div class="container mx-auto px-4 py-6 flex flex-col lg:flex-row justify-between relative">
-                <div class="dropdown ml-auto lg:hidden">
+                <div class="dropdown flex justify-between lg:hidden">
                     <div tabindex="0" role="button" class="btn btn-ghost">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
@@ -23,33 +30,38 @@
                     </div>
                     <ul tabindex="0"
                         class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 absolute right-0">
-                        <li><a>Scrunchie</a></li>
-                        <li><a>Bows</a></li>
-                        <li><a>Mask</a></li>
-                        <li><a>Faceless Potrait</a></li>
-                    </ul>
-                </div>
-                <div class="flex items-center mb-4 lg:mb-0">
-                    <img class="w-10 lg:w-16 lg:block" src="./images/BeclassyLogo.jpg" alt="" srcset="">
-                    <a class="text-2xl lg:text-3xl">BE CLASSY</a>
-                </div>
-                <div class="navbar-center lg:flex justify-center hidden mb-4 lg:mb-0">
-                    <ul class="menu menu-horizontal px-1">
                         <li><a href="index.html">Home</a></li>
-                        <li><a>Scrunchie</a></li>
-                        <li><a>Bows</a></li>
+                        <li><a href="scrunchie.html">Scrunchie</a></li>
+                        <li><a href="bows.html">Bows</a></li>
                         <li><a href="mask.html">Mask</a></li>
                         <li><a href="potrait.html">Faceless Potrait</a></li>
                     </ul>
+                    <div id="cart" class="flex items-center justify-center"><i class="fa-solid fa-cart-shopping "></i></div>
                 </div>
-                <div class="flex items-center">
-                    <img class="w-10 lg:w-16 lg:block" src="./images/NeedleLogo.jpeg" alt="" srcset="">
-                    <a class="text-2xl lg:text-3xl">NEEDLE</a>
+                <div class="flex justify-between items-center w-full">
+                    <div class="flex gap-4 items-center mb-4 lg:mb-0">
+                        <img class="w-10 lg:w-12 lg:block" src="./images/BeclassyLogo.jpg" alt="" srcset="">
+                        <a class="text-xl lg:text-2xl font-extrabold">BE CLASSY</a>
+                    </div>
+                    <div class="navbar-center lg:flex justify-center hidden mb-4 lg:mb-0">
+                        <ul class="menu menu-horizontal px-1">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="scrunchie.html">Scrunchie</a></li>
+                            <li><a href="bows.html">Bows</a></li>
+                            <li><a href="mask.html">Mask</a></li>
+                            <li><a href="potrait.html">Faceless Potrait</a></li>
+                            <div id="cart" class="flex items-center justify-center"><i class="fa-solid fa-cart-shopping "></i></div>
+                        </ul>
+                    </div>
+                    <div class="flex gap-4 items-center">
+                        <img class="w-10 lg:w-12 lg:block" src="./images/NeedleLogo.jpeg" alt="" srcset="">
+                        <a class="text-xl lg:text-2xl font-semibold">NEEDLE</a>
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
-    <main class="container mx-auto w-full lg:w-[94%] px-4">
+    <main class="container mx-auto w-full lg:w-[94%] px-4 mt-28 lg:mt-20">
         <section class="py-10">
             <div class="text-center">
                 <h1 class="text-center text-3xl lg:text-5xl font-bold">Bows</h1>
