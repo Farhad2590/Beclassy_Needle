@@ -17,27 +17,10 @@
 </head>
 
 <body>
-    <header class="container mx-auto fixed top-0 z-50 ">
+    <header class="container mx-auto fixed top-0 z-50">
         <nav class="bg-base-100">
             <div class="container mx-auto px-4 py-6 flex flex-col lg:flex-row justify-between relative">
-                <div class="dropdown flex justify-between lg:hidden">
-                    <div tabindex="0" role="button" class="btn btn-ghost">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
-                    </div>
-                    <ul tabindex="0"
-                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 absolute right-0">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="scrunchie.html">Scrunchie</a></li>
-                        <li><a href="bows.html">Bows</a></li>
-                        <li><a href="mask.html">Mask</a></li>
-                        <li><a href="potrait.html">Faceless Potrait</a></li>
-                    </ul>
-                    <div id="cart" class="flex items-center justify-center"><i class="fa-solid fa-cart-shopping "></i></div>
-                </div>
+                
                 <div class="flex justify-between items-center w-full">
                     <div class="flex gap-1 lg:gap-4 items-center">
                         <img class="w-9 lg:w-12 lg:block" src="./images/BeclassyLogo.jpg" alt="" srcset="">
@@ -50,7 +33,11 @@
                             <li><a href="bows.html">Bows</a></li>
                             <li><a href="mask.html">Mask</a></li>
                             <li><a href="potrait.html">Faceless Potrait</a></li>
-                            <div id="cart" class="flex items-center justify-center"><i class="fa-solid fa-cart-shopping "></i></div>
+                            <div id="cart" class="flex items-center justify-center">
+                                <img class="w-8" src="./images/buy.png" alt="" srcset="">
+                                <span class="text-xl">0</span>
+                            </div>
+
                         </ul>
                     </div>
                     <div class="flex gap-1 lg:gap-4 items-center">
@@ -58,9 +45,37 @@
                         <a class="text-xl lg:text-2xl font-semibold">NEEDLE</a>
                     </div>
                 </div>
+                <div class="dropdown flex justify-between lg:hidden">
+                    <div tabindex="0" role="button" class="btn btn-ghost" onclick="toggleSidebar()">
+                        <img class="w-7" src="./images/menu.png" alt="" srcset="">
+                    </div>
+                    <div id="cart" class="flex items-center justify-center">
+                        <img class="w-8" src="./images/buy.png" alt="" srcset="">
+                        <span class="text-xl">0</span>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
+
+    <!-- Mobile Sidebar -->
+    <div id="sidebar" class="fixed top-0 left-0 h-full w-60 bg-gray-900 text-white z-50 transform -translate-x-full transition-transform duration-300">
+        <button class="absolute top-5 right-5 text-white" onclick="toggleSidebar()">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+        <ul class="mt-20">
+            <li><a href="index.html" class="block py-2 px-4">Home</a></li>
+            <li><a href="scrunchie.html" class="block py-2 px-4">Scrunchie</a></li>
+            <li><a href="bows.html" class="block py-2 px-4">Bows</a></li>
+            <li><a href="mask.html" class="block py-2 px-4">Mask</a></li>
+            <li><a href="potrait.html" class="block py-2 px-4">Faceless Potrait</a></li>
+        </ul>
+    </div>
+
     <main class="container mx-auto w-[94%]  mt-36 lg:mt-28">
         <section>
             <div>
@@ -235,34 +250,36 @@
     </main>
     <footer class="mt-10 footer p-10 lg:flex lg:justify-between bg-neutral text-neutral-content ">
         <aside>
-            <div class="flex gap-4 items-center mb-4 lg:mb-0">
-                <img class="w-10 lg:w-12 lg:block" src="./images/BeclassyLogo.jpg" alt="" srcset="">
-                <a class="text-xl lg:text-2xl font-extrabold">BE CLASSY</a>
+            <div class="flex items-center">
+                <img class="w-10 lg:w-16 lg:block" src="./images/BeclassyLogo.jpg" alt="" srcset="">
+                <a class="text-2xl lg:text-4xl">BE CLASSY</a>
             </div>
             <nav>
                 <h6 class="footer-title">Social Platform Of BE CLASSY</h6>
                 <div class="grid grid-flow-col gap-4">
-                    <a href=""><i class="fa-brands fa-facebook"></i></a>
-                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-square-whatsapp"></i></a>
+                    <a href=""><img class="w-8" src="./images/facebook.png" alt="" srcset=""></i></a>
+                    <a href=""><img class="w-8" src="./images/instagram.png" alt="" srcset=""></i></a>
+                    <a href=""><img class="w-8" src="./images/whatsapp.png" alt="" srcset=""></i></a>
                 </div>
             </nav>
         </aside>
         <aside>
-            <div class="flex gap-4 items-center">
-                <img class="w-10 lg:w-12 lg:block" src="./images/NeedleLogo.jpeg" alt="" srcset="">
-                <a class="text-xl lg:text-2xl font-semibold">NEEDLE</a>
+            <div class="flex items-center">
+                <img class="w-10 lg:w-16 lg:block" src="./images/NeedleLogo.jpeg" alt="" srcset="">
+                <a class="text-2xl lg:text-4xl">NEEDLE</a>
             </div>
             <nav>
                 <h6 class="footer-title">Social Platform Of Needle</h6>
                 <div class="grid grid-flow-col gap-4">
-                    <a href=""><i class="fa-brands fa-facebook"></i></a>
-                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-square-whatsapp"></i></a>
+                    <a href=""><img class="w-8" src="./images/facebook.png" alt="" srcset=""></i></a>
+                    <a href=""><img class="w-8" src="./images/instagram.png" alt="" srcset=""></i></a>
+                    <a href=""><img class="w-8" src="./images/whatsapp.png" alt="" srcset=""></i></a>
                 </div>
             </nav>
         </aside>
     </footer>
+    <script src="./js/menu.js"></script>
+
 
 
 </body>
